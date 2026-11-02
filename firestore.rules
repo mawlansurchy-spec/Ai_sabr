@@ -1,0 +1,100 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'mawlansurchy@gmail.com' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      // User can read their own profile; Admin can read all profiles
+      allow get: if isOwner(userId) || isAdmin();
+      allow list: if isAdmin() || (isSignedIn() && resource.data.uid == request.auth.uid);
+
+      // User can create their initial profile ONLY as PENDING, cannot activate themselves
+      allow create: if isOwner(userId) &&
+        request.resource.data.uid == request.auth.uid &&
+        request.resource.data.accountStatus == 'PENDING' &&
+        request.resource.data.fullName is string &&
+        request.resource.data.fullName.size() <= 100 &&
+        request.resource.data.email is string &&
+        request.resource.data.email.size() <= 150 &&
+        request.resource.data.phone is string &&
+        request.resource.data.phone.size() <= 30;
+
+      // Only administrators can update accountStatus or subscription expiration
+      // Users can only update their phone or fullName, never their status or expiration
+      allow update: if isAdmin() || (
+        isOwner(userId) &&
+        request.resource.data.accountStatus == resource.data.accountStatus &&
+        (!('expirationDate' in request.resource.data) || request.resource.data.expirationDate == resource.data.expirationDate) &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['fullName', 'phone', 'emailVerified'])
+      );
+
+      // Only administrators can delete user records
+      allow delete: if isAdmin();
+    }
+
+    // Activation Requests Collection
+    match /activation_requests/{requestId} {
+      allow get: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+
+      // User creates their activation request
+      allow create: if isSignedIn() &&
+        request.resource.data.userId == request.auth.uid &&
+        request.resource.data.requestStatus == 'PENDING';
+
+      // Admin updates request status or user updates telegramRequestStatus
+      allow update: if isAdmin() || (
+        isSignedIn() &&
+        resource.data.userId == request.auth.uid &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['telegramRequestStatus'])
+      );
+
+      allow delete: if isAdmin();
+    }
+
+    // Subscriptions Collection
+    match /subscriptions/{subscriptionId} {
+      allow get: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Admin Logs Collection
+    match /admin_logs/{logId} {
+      allow get, list: if isAdmin();
+      allow create: if isAdmin() || isSignedIn();
+      allow update, delete: if false; // Immutable audit trail
+    }
+
+    // Admins Collection
+    match /admins/{adminId} {
+      allow read: if isSignedIn();
+      allow write: if false; // Provisioned securely via console or backend
+    }
+  }
+}

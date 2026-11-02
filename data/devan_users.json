@@ -1,0 +1,24 @@
+[
+  {
+    "uid": "usr_mvxpj9we_951bad58",
+    "fullName": "Kurdish Trader",
+    "email": "testtrader@devan.com",
+    "phone": "+9647501234567",
+    "registrationDate": "2026-11-01T10:48:56.128Z",
+    "accountStatus": "ACTIVE",
+    "subscriptionType": "MONTHLY",
+    "emailVerified": false,
+    "activationDate": "2026-11-01T10:49:21.447Z",
+    "expirationDate": "2026-12-01T10:49:21.447Z"
+  },
+  {
+    "uid": "master_operator",
+    "fullName": "Dr.Devan",
+    "email": "admin@devan.com",
+    "phone": "+9647500000000",
+    "registrationDate": "2026-11-01T10:49:13.244Z",
+    "accountStatus": "ACTIVE",
+    "subscriptionType": "YEARLY",
+    "emailVerified": true
+  }
+]

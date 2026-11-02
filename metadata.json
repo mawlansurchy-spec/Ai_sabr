@@ -1,0 +1,6 @@
+{
+  "name": "Dr.Devan",
+  "description": "AI Creative Platform - Secure User Panel with AI image generation, 4-language support, subscription management, and creative services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

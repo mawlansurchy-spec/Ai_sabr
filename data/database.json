@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": "2534f396f37ddb07",
+      "full_name": "Test Trader",
+      "username": "testtrader",
+      "email": "test@example.com",
+      "phone": "+9647500000000",
+      "password_hash": "$2b$12$UyW86kn5/pHzL/kWf3O/3uqU6P/PDmafjzWweW5N8CNmyJDUlbuz6",
+      "balance": 0,
+      "free_ai_credits": 3,
+      "account_status": "ACTIVE",
+      "language": "ku_so",
+      "two_factor_enabled": false,
+      "created_at": "2026-10-24T00:50:35.528Z",
+      "updated_at": "2026-10-24T00:50:44.420Z"
+    }
+  ],
+  "generations": [
+    {
+      "id": "5434e286d97be1df",
+      "user_id": "2534f396f37ddb07",
+      "prompt": "Bullish golden candlestick chart breaking resistance",
+      "style": "cinematic",
+      "aspect_ratio": "1:1",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJiZ0dyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGYxNzJhIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTFiNGIiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnbG93MSIgY3g9IjMwJSIgY3k9IjM1JSIgcj0iNjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA2YjZkNCIgc3RvcC1vcGFjaXR5PSIwLjYiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iNjAlIiBzdG9wLWNvbG9yPSIjMDZiNmQ0IiBzdG9wLW9wYWNpdHk9IjAuMSIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGYxNzJhIiBzdG9wLW9wYWNpdHk9IjAiIC8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnbG93MiIgY3g9IjcwJSIgY3k9IjY1JSIgcj0iNTUlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhiNWNmNiIgc3RvcC1vcGFjaXR5PSIwLjUiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjOGI1Y2Y2IiBzdG9wLW9wYWNpdHk9IjAuMDUiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFlMWI0YiIgc3RvcC1vcGFjaXR5PSIwIiAvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9ImJsdXJGaWx0ZXIiIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI0MCIgLz4KICAgIDwvZmlsdGVyPgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjYiIHJlc3VsdD0iY29sb3JlZEJsdXIiLz4KICAgICAgPGZlTWVyZ2U+CiAgICAgICAgPGZlTWVyZ2VOb2RlIGluPSJjb2xvcmVkQmx1ciIvPgogICAgICAgIDxmZU1lcmdlTm9kZSBpbj0iU291cmNlR3JhcGhpYyIvPgogICAgICA8L2ZlTWVyZ2U+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCAtLT4KICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI2JnR3JhZCkiIC8+CgogIDwhLS0gQW1iaWVudCBnbG93aW5nIHNwaGVyZXMgLS0+CiAgPGNpcmNsZSBjeD0iMzA3LjIiIGN5PSIzNTguNCIgcj0iNDA5LjYiIGZpbGw9InVybCgjZ2xvdzEpIiAvPgogIDxjaXJjbGUgY3g9IjcxNi44IiBjeT0iNjY1LjYiIHI9IjM4OS4xMiIgZmlsbD0idXJsKCNnbG93MikiIC8+CgogIDwhLS0gUHJvY2VkdXJhbCBnZW9tZXRyaWMgLyBhcnRpc3RpYyBsYXllcmVkIHNoYXBlcyAtLT4KICA8ZyBvcGFjaXR5PSIwLjQiIGZpbHRlcj0idXJsKCNnbG93KSI+CiAgICA8cG9seWdvbiBwb2ludHM9IjUxMiwxNTMuNiA4MTkuMiw2NjUuNiAyMDQuOCw2NjUuNiIgCiAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM4YmRmOCIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogICAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTEyIiByPSIyNTYiIAogICAgICBmaWxsPSJub25lIiBzdHJva2U9IiMwNmI2ZDQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iOCA2IiAvPgogICAgPGNpcmNsZSBjeD0iNTEyIiBjeT0iNTEyIiByPSIzNTguNCIgCiAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhiNWNmNiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPC9nPgoKICA8IS0tIENvcmUgYXJ0aXN0aWMgbW90aWYgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLCA0OTEuNTIpIj4KICAgIDwhLS0gU3RhcmJ1cnN0IC8gRW5lcmd5IHdhdmVzIC0tPgogICAgPHBhdGggZD0iTTAgLTE4NC4zMiBRIDgxLjkyIDAgMCAxODQuMzIgUSAtODEuOTIgMCAwIC0xODQuMzIiIAogICAgICBmaWxsPSIjMzhiZGY4IiBvcGFjaXR5PSIwLjgiIGZpbHRlcj0idXJsKCNnbG93KSIgLz4KICAgIDxwYXRoIGQ9Ik0tMTg0LjMyIDAgUSAwIDgxLjkyIDE4NC4zMiAwIFEgMCAtODEuOTIgLTE4NC4zMiAwIiAKICAgICAgZmlsbD0iIzA2YjZkNCIgb3BhY2l0eT0iMC42IiBmaWx0ZXI9InVybCgjZ2xvdykiIC8+CiAgICAKICAgIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIxNiIgZmlsbD0iI2ZmZmZmZiIgZmlsdGVyPSJ1cmwoI2dsb3cpIiAvPgogIDwvZz4KCiAgPCEtLSBHcmlkIG92ZXJsYXkgZm9yIGRpZ2l0YWwgdGVjaCByZWFsaXNtIC0tPgogIDxsaW5lIHgxPSIwIiB5MT0iODcwLjQiIHgyPSIxMDI0IiB5Mj0iODcwLjQiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjEwMi40IiB5MT0iMCIgeDI9IjEwMi40IiB5Mj0iMTAyNCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjkyMS42IiB5MT0iMCIgeDI9IjkyMS42IiB5Mj0iMTAyNCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiIC8+CgogIDwhLS0gQm90dG9tIEhVRCAvIEFydHdvcmsgTWV0YWRhdGEgQmFkZ2UgLS0+CiAgPHJlY3QgeD0iODEuOTIiIHk9Ijg5MC44OCIgd2lkdGg9Ijg2MC4xNiIgaGVpZ2h0PSI1NiIgcng9IjE2IiAKICAgIGZpbGw9InJnYmEoMCwgMCwgMCwgMC40KSIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMTIpIiAvPgogIAogIDx0ZXh0IHg9IjEyMi44OCIgeT0iOTI0Ljg4IiBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+CiAgICDinKYgQnVsbGlzaCBnb2xkZW4gY2FuZGxlc3RpY2sgY2hhcnQgYnJlYWtpbmcgcmVzLi4uCiAgPC90ZXh0PgogIDx0ZXh0IHg9IjkwMS4xMiIgeT0iOTI0Ljg4IiBmaWxsPSIjMzhiZGY4IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0iZW5kIj4KICAgIENJTkVNQVRJQyDigKIgMToxCiAgPC90ZXh0Pgo8L3N2Zz4=",
+      "generation_type": "AI_GENERATED",
+      "credit_used": 1,
+      "status": "SUCCESS",
+      "created_at": "2026-10-24T00:50:44.420Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "f17b1b1ab007dedf",
+      "user_id": "2534f396f37ddb07",
+      "plan_name": "MONTHLY",
+      "price": 45,
+      "duration_days": 30,
+      "start_date": null,
+      "expiry_date": null,
+      "payment_status": "PENDING",
+      "subscription_status": "PENDING",
+      "request_id": "SUB-MVLOND7C-A06D44",
+      "created_at": "2026-10-24T00:50:53.208Z",
+      "updated_at": "2026-10-24T00:50:53.208Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "61c5e33304d279bf",
+      "user_id": "2534f396f37ddb07",
+      "title": "داواکاری بەشداریکردن نێردرا",
+      "message": "داواکاری بەشداریکردنی مانگانە (Monthly) (کۆد: SUB-MVLOND7C-A06D44) بە سەرکەوتوویی گەیشتە تیمی بەڕێوەبردن. پاش پشتڕاستکردنەوە ئەکتیڤ دەکرێت.",
+      "type": "info",
+      "read": false,
+      "created_at": "2026-10-24T00:50:53.208Z"
+    },
+    {
+      "id": "ef4df43d2da5821a",
+      "user_id": "2534f396f37ddb07",
+      "title": "بەخێربێیت بۆ Dr.Devan AI",
+      "message": "ئەژمێرەکەت بە سەرکەوتوویی دروستکرا. ٤ کرێدیتی بێبەرامبە بۆ بەرهەمهێنانی وێنە پێشکەشت کراوە.",
+      "type": "success",
+      "read": false,
+      "created_at": "2026-10-24T00:50:35.528Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "b081317d40dea233f783016d6a5d7d0425c65f45039c2bf7c49347fe53ae4991",
+      "user_id": "2534f396f37ddb07",
+      "created_at": "2026-10-24T00:50:35.529Z",
+      "expires_at": "2026-11-23T00:50:35.529Z"
+    }
+  ],
+  "support_requests": []
+}

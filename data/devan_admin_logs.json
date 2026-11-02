@@ -1,0 +1,67 @@
+[
+  {
+    "logId": "log_1793533469405_505",
+    "adminId": "usr_mvxpj9we_951bad58",
+    "action": "USER_LOGIN_SUCCESS",
+    "timestamp": "2026-11-01T11:44:29.405Z"
+  },
+  {
+    "logId": "log_1793530167180_650",
+    "adminId": "usr_mvxpj9we_951bad58",
+    "action": "USER_LOGIN_SUCCESS",
+    "timestamp": "2026-11-01T10:49:27.180Z"
+  },
+  {
+    "logId": "log_1793530161448_434",
+    "adminId": "admin",
+    "action": "ACTIVATE_MONTHLY_30D",
+    "targetUserId": "usr_mvxpj9we_951bad58",
+    "timestamp": "2026-11-01T10:49:21.448Z"
+  },
+  {
+    "logId": "log_1793530157189_251",
+    "adminId": "admin",
+    "action": "ADMIN_LOGGED_IN",
+    "timestamp": "2026-11-01T10:49:17.189Z"
+  },
+  {
+    "logId": "log_1793530153244_255",
+    "adminId": "MASTER",
+    "action": "MASTER_OPERATOR_LOGIN",
+    "targetUserId": "master_operator",
+    "timestamp": "2026-11-01T10:49:13.244Z"
+  },
+  {
+    "logId": "log_1793530153244_659",
+    "adminId": "SYSTEM",
+    "action": "USER_REGISTERED",
+    "targetUserId": "master_operator",
+    "timestamp": "2026-11-01T10:49:13.244Z"
+  },
+  {
+    "logId": "log_1793530142855_928",
+    "adminId": "usr_mvxpj9we_951bad58",
+    "action": "USER_LOGIN_SUCCESS",
+    "timestamp": "2026-11-01T10:49:02.855Z"
+  },
+  {
+    "logId": "log_1793530136129_396",
+    "adminId": "SYSTEM",
+    "action": "USER_REGISTERED_AUTH",
+    "targetUserId": "usr_mvxpj9we_951bad58",
+    "timestamp": "2026-11-01T10:48:56.129Z"
+  },
+  {
+    "logId": "log_1793530136128_276",
+    "adminId": "SYSTEM",
+    "action": "USER_REGISTERED",
+    "targetUserId": "usr_mvxpj9we_951bad58",
+    "timestamp": "2026-11-01T10:48:56.128Z"
+  },
+  {
+    "logId": "log_1793472392226_637",
+    "adminId": "admin",
+    "action": "ADMIN_LOGGED_IN",
+    "timestamp": "2026-10-31T18:46:32.226Z"
+  }
+]
